@@ -40,7 +40,9 @@ public class DecimalCollectionTest {
 
     @Test
     public void testHigher() {
-        fail("Not yet implemented");
+        collection.add(5.0f);
+        collection.add(6.0f);
+        assertEquals(6.0f, collection.higher(), 10e-5);
     }
 
 }
