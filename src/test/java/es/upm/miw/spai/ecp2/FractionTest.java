@@ -41,5 +41,13 @@ public class FractionTest {
     public void testDecimal() {
         assertEquals((double)2/3, fraction.decimal(),10e-5);
     }
+    
+    @Test
+    public void testIsPropia() {
+        Fraction fraction2 = new Fraction(3,2);
+        
+        assertEquals(true, fraction.isPropia());
+        assertEquals(false, fraction2.isPropia());
+    }
 
 }
