@@ -36,10 +36,18 @@ public class FractionTest {
         assertEquals(3, fraction.getDenominator());
     }
     
-
     @Test
     public void testDecimal() {
         assertEquals((double)2/3, fraction.decimal(),10e-5);
+    }
+    
+    @Test
+    public void testIsUnit() {
+        
+        Fraction fraction2 = new Fraction (1,2);
+        
+        assertEquals(false, fraction.isUnit());
+        assertEquals(true, fraction2.isUnit());
     }
 
 }
