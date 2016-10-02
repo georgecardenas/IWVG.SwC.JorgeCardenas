@@ -60,4 +60,8 @@ public class Fraction {
         return (double) numerator / denominator;
     }
     
+    public boolean isUnit() {
+    	return (this.numerator == 1);
+    }
+    
 }
