@@ -41,5 +41,11 @@ public class Point {
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
-    
+
+    public double distance(Point p) {
+        double c1 = this.x - p.getX();
+        double c2 = this.y - p.getY();
+        double d = Math.sqrt(c1 * c1 + c2 * c2);
+        return d;
+    }
 }

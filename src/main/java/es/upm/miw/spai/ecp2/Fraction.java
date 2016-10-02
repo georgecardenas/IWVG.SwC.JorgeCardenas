@@ -54,9 +54,10 @@ public class Fraction {
     }
 
     public boolean isProper() {
-        if (this.numerator < this.denominator) {
-            return true;
-        } else
-            return false;
+        return (this.numerator < this.denominator) ? true : false;
+}
+    
+    public boolean isUnit() {
+    	return (this.numerator == 1);
     }
 }

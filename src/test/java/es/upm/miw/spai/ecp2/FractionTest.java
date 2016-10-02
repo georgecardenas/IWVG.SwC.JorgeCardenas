@@ -36,7 +36,6 @@ public class FractionTest {
         assertEquals(3, fraction.getDenominator());
     }
     
-
     @Test
     public void testDecimal() {
         assertEquals((double)2/3, fraction.decimal(),10e-5);
