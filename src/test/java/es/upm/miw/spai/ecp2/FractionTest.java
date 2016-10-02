@@ -49,5 +49,13 @@ public class FractionTest {
         assertEquals(false, fraction.isUnit());
         assertEquals(true, fraction2.isUnit());
     }
+    
+    @Test
+    public void testIsPropia() {
+        Fraction fraction2 = new Fraction(3,2);
+        
+        assertEquals(true, fraction.isProper());
+        assertEquals(false, fraction2.isProper());
+    }
 
 }
