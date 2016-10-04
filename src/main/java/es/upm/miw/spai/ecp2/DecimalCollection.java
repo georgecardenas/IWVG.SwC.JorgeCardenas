@@ -35,4 +35,8 @@ public class DecimalCollection {
         return higher;
     }
 
+    public void remove(int index)
+    {
+    	this.collection.remove(index);
+    }
 }

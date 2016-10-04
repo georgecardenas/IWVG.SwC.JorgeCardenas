@@ -44,5 +44,14 @@ public class DecimalCollectionTest {
         collection.add(6.0f);
         assertEquals(6.0f, collection.higher(), 10e-5);
     }
+    
+    @Test
+    public void testRemove() {
+        collection.add(5.0f);
+        collection.add(6.0f);
+        collection.add(7.0f);
+        collection.remove(1);
+        assertEquals(2, collection.size());
+    }
 
 }
