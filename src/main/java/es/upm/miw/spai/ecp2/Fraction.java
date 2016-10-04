@@ -60,4 +60,11 @@ public class Fraction {
     public boolean isUnit() {
     	return (this.numerator == 1);
     }
+    
+    public Fraction sum(Fraction fraction)
+    {
+    	Fraction answer;
+        answer = new Fraction(fraction.getNumerator() + fraction.getNumerator(), fraction.getDenominator());
+        return answer;
+    }
 }

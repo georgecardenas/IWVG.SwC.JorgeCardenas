@@ -57,5 +57,13 @@ public class FractionTest {
         assertEquals(true, fraction.isProper());
         assertEquals(false, fraction2.isProper());
     }
+    
+    @Test
+    public void testsum() {
+        Fraction fraction2 = new Fraction(1,4);
+        fraction2=fraction.sum(fraction2);
+        assertEquals(2, fraction2.getNumerator());
+        assertEquals(4, fraction2.getDenominator());
+    }
 
 }
