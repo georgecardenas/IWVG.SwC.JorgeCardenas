@@ -36,10 +36,34 @@ public class FractionTest {
         assertEquals(3, fraction.getDenominator());
     }
     
-
     @Test
     public void testDecimal() {
         assertEquals((double)2/3, fraction.decimal(),10e-5);
+    }
+    
+    @Test
+    public void testIsUnit() {
+        
+        Fraction fraction2 = new Fraction (1,2);
+        
+        assertEquals(false, fraction.isUnit());
+        assertEquals(true, fraction2.isUnit());
+    }
+    
+    @Test
+    public void testIsPropia() {
+        Fraction fraction2 = new Fraction(3,2);
+        
+        assertEquals(true, fraction.isProper());
+        assertEquals(false, fraction2.isProper());
+    }
+    
+    @Test
+    public void testsum() {
+        Fraction fraction2 = new Fraction(1,4);
+        fraction2=fraction.sum(fraction2);
+        assertEquals(2, fraction2.getNumerator());
+        assertEquals(4, fraction2.getDenominator());
     }
 
 }
